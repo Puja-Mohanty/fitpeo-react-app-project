@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,53 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.comment_font{
+  font-size: 12px;
+}
+
+
+/* custom css start here */
+ul.custom_list_sidenav li{
+  height: 50px;
+  position: relative;
+}
+
+ul.custom_list_sidenav li.active::before{
+  content: '';
+  width: 2px;
+  height: 30px;
+  background-color: #4F46E5;
+  position: absolute;
+  left: -7px;
+  top: 10px;
+}
+ul.custom_list_sidenav li.active svg{
+  color: #4F46E5;
+}
+
+ul.custom_list_sidenav li svg{
+  font-size: 25px;
 }
